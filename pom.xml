@@ -7,6 +7,32 @@
     <groupId>at.campus02.bsd</groupId>
     <artifactId>Task7QueueUnterwieserHofer</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <url>https://github.com/Martin2525/Task7QueueUnterwieserHofer.git</url>
+
+    <developers>
+        <developer>
+            <id>Martin2525</id>
+            <name>Martin Unterwieser</name>
+            <email>michael.ulm@fh-joanneum.at</email>
+            <organization>FH CAMPUS 02</organization>
+            <organizationUrl>https://www.campus02.at</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
+        <developer>
+            <id>ReneHofer</id>
+            <name>Rene Hofer</name>
+            <email>s51165@edu.campus02.at</email>
+            <organization>FH CAMPUS 02</organization>
+            <organizationUrl>https://www.campus02.at</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -15,13 +41,14 @@
 
 
     <dependencies>
+
         <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.7.0-M1</version>
-        <scope>test</scope>
-       
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
         </dependency>
+
            <dependency>
                <groupId>org.junit.jupiter</groupId>
                <artifactId>junit-jupiter-api</artifactId>
@@ -40,12 +67,7 @@
                <version>2.17.2</version>
                </dependency>
        
-               <dependency>
-                   <groupId>org.junit.jupiter</groupId>
-                   <artifactId>junit-jupiter-engine</artifactId>
-                   <version>5.8.2</version>
-                   <scope>test</scope>
-                   </dependency>
+
                    <dependency>
                    <groupId>org.junit.jupiter</groupId>
                    <artifactId>junit-jupiter-params</artifactId>
@@ -109,7 +131,53 @@
                 </executions>
                 </plugin>
 
-        </plugins>
+
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>17</release>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-site-plugin</artifactId>
+                   <version>3.7.1</version>
+               </plugin>
+               <plugin>
+                   <groupId>org.jacoco</groupId>
+                   <artifactId>jacoco-maven-plugin</artifactId>
+                   <version>0.8.6</version>
+                   <executions>
+                       <execution>
+                           <id>prepare-agent</id>
+                           <goals>
+                               <goal>prepare-agent</goal>
+                           </goals>
+                       </execution>
+                       <execution>
+                           <id>report</id>
+                           <phase>test</phase>
+                           <goals>
+                               <goal>report</goal>
+                           </goals>
+                       </execution>
+                   </executions>
+               </plugin>
+           </plugins>
+
     </build>
+
+
 
 </project>
