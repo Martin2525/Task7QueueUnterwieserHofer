@@ -7,7 +7,7 @@
 
 ## Tasklist
 
-- [ ] extend pom.xml  
+- [X] extend pom.xml  
   
 - [ ] corrections of mistakes in code (own branch)  
 
