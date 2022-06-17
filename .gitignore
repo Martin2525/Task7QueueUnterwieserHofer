@@ -1,0 +1,15 @@
+# ignore all logs
+*.log
+
+# ignore all pdf
+*.pdf
+
+# ignore all html
+*.html
+
+# ignore idea ordner
+idea/
+
+# ignore target ordner
+idea/
+
