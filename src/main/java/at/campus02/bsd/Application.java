@@ -15,6 +15,7 @@ import java.util.List;
 public class Application {
     public static void main(String[] args) {
 
+
         /**
          * Creates Set-Up for List for Drinks
          * @param Liquid is made of String name, double volume and double alcoholpercentage
@@ -22,6 +23,8 @@ public class Application {
          */
 
          List<SimpleDrink> drinkList = new ArrayList<>();
+
+
          Liquid beer = new Liquid("hopfenwasser",12.2,5);
          SimpleDrink beer2 = new SimpleDrink("SuperBier",beer);
 
