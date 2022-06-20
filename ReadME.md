@@ -11,7 +11,7 @@
   
 - [X] corrections of mistakes in code (own branch)  
 
-- [ ] create new implementation  
+- [X] create new implementation  
 
 - [ ] create tests  
 
