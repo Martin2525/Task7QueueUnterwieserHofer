@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class DrinksQueue {
+public class IDrinksQueue implements IDrinks {
 
     private List<SimpleDrink> drinkList = new ArrayList<SimpleDrink>();
     private int maxSize = 5;
 
     ///First Mistake fixed : wrong constructor
-    public DrinksQueue(int maxsize) {
+    public IDrinksQueue(int maxsize) {
         this.maxSize = maxSize;
     }
 
 
     //Second Mistake : < instead of =
     @Override
-    public boolean offer(SimpleDrink obj) {
+    public boolean offerDrinks(SimpleDrink obj) {
         if (drinkList.size() < maxSize)
             drinkList.add(obj);
         else
@@ -28,8 +28,8 @@ public class DrinksQueue {
 
     //Third mistake : Does not return null
     @Override
-    public SimpleDrink poll() {
-        SimpleDrink element = peek();
+    public SimpleDrink pollDrinks() {
+        SimpleDrink element = peekDrinks();
 
         if (drinkList.size() == 0) {
             return null;
@@ -42,8 +42,8 @@ public class DrinksQueue {
     }
 
     @Override
-    public SimpleDrink remove() {
-        SimpleDrink element = poll();
+    public SimpleDrink removeDrinks() {
+        SimpleDrink element = pollDrinks();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
 
@@ -51,7 +51,7 @@ public class DrinksQueue {
     }
 
     @Override
-    public SimpleDrink peek() {
+    public SimpleDrink peekDrinks() {
         SimpleDrink element;
         if (drinkList.size() > 0)
             element = drinkList.get(0);
@@ -63,7 +63,7 @@ public class DrinksQueue {
 
     @Override
     public SimpleDrink element() {
-        SimpleDrink element = peek();
+        SimpleDrink element = peekDrinks();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
 
@@ -71,4 +71,4 @@ public class DrinksQueue {
     }
 
 }
-}
+
