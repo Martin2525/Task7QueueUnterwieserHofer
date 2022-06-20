@@ -9,7 +9,7 @@
 
 - [X] extend pom.xml  
   
-- [ ] corrections of mistakes in code (own branch)  
+- [X] corrections of mistakes in code (own branch)  
 
 - [ ] create new implementation  
 

@@ -13,13 +13,17 @@ public class StringQueue implements IQueue {
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
+
+///First Mistake fixed : wrong constructor
   public StringQueue(int maxsize) {
-    maxSize = maxSize;
+    this.maxSize = maxSize;
   }
 
+
+  //Second Mistake : < instead of =
   @Override
   public boolean offer(String obj) {
-    if (elements.size() != maxSize)
+    if (elements.size() < maxSize)
       elements.add(obj);
     else
       return false;
@@ -27,11 +31,15 @@ public class StringQueue implements IQueue {
     return true;
   }
 
+  //Third mistake : Does not return null
   @Override
   public String poll() {
     String element = peek();
 
     if (elements.size() == 0) {
+      return null;
+
+    }else{
       elements.remove(0);
     }
 
