@@ -14,7 +14,7 @@ public class StringQueue implements IQueue {
   private int maxSize = 5;
 
 
-///First Mistake fixed : wrong constructor
+
   public StringQueue(int maxsize) {
     this.maxSize = maxSize;
   }

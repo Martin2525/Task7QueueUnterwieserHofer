@@ -9,13 +9,11 @@ public class IDrinksQueue implements IDrinks {
     private List<SimpleDrink> drinkList = new ArrayList<SimpleDrink>();
     private int maxSize = 5;
 
-    ///First Mistake fixed : wrong constructor
-    public IDrinksQueue(int maxsize) {
+    public IDrinksQueue(List<SimpleDrink> drinkList, int maxSize) {
+        this.drinkList = drinkList;
         this.maxSize = maxSize;
     }
 
-
-    //Second Mistake : < instead of =
     @Override
     public boolean offerDrinks(SimpleDrink obj) {
         if (drinkList.size() < maxSize)
@@ -26,7 +24,6 @@ public class IDrinksQueue implements IDrinks {
         return true;
     }
 
-    //Third mistake : Does not return null
     @Override
     public SimpleDrink pollDrinks() {
         SimpleDrink element = peekDrinks();
