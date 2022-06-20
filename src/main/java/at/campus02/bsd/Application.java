@@ -6,6 +6,7 @@ import java.util.List;
 public class Application {
     public static void main(String[] args) {
 
+
          List<SimpleDrink> drinkList = new ArrayList<>();
 
          Liquid beer = new Liquid("hopfenwasser",12.2,5);
