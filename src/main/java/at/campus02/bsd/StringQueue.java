@@ -7,6 +7,8 @@
 
 package at.campus02.bsd;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -36,6 +38,7 @@ public class StringQueue implements IQueue {
     this.maxSize = maxSize;
     this.elements = elements;
   }
+
 
 
 

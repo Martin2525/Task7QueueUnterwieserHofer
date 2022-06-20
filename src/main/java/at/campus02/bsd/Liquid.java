@@ -1,8 +1,12 @@
 package at.campus02.bsd;
+
+import org.junit.Test;
+
 /**
  * Class represents a liquid which can be used in
  * drinks
  */
+
 public class Liquid {
     /**
      * name of liquid

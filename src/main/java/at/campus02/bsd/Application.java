@@ -8,6 +8,8 @@
 
 package at.campus02.bsd;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,8 +63,7 @@ public class Application {
         /**
          * Standart Print-Out Test that should not be reached because element
          */
-        //Does not reach because element throws exception
-        System.out.println("TEST");
+
 
 
     }
