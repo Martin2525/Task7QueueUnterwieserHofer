@@ -1,12 +1,31 @@
+/*
+ * Project: Task7QueueUnterwieserHofer
+ * Authors:  Martin Unterwieser & Rene Hofer
+ * Last Change: 20.06.2022
+ */
+
+
 package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Class that represents Queue of drinks
+ * For method comments check out IDrinks interface
+ */
 public class IDrinksQueue implements IDrinks {
 
+
+    /**
+     * list of SimpleDrink objects
+     */
     private List<SimpleDrink> drinkList = new ArrayList<SimpleDrink>();
+
+    /**
+     * Integer value that describes the maximum size of the queue
+     */
     private int maxSize = 5;
 
     public IDrinksQueue(List<SimpleDrink> drinkList, int maxSize) {

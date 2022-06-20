@@ -1,26 +1,44 @@
+/*
+ * Project: Task7QueueUnterwieserHofer
+ * Authors:  Martin Unterwieser & Rene Hofer
+ * Last Change: 20.06.2022
+ */
+
+
 package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * For method comments check out IQueue interface
+ */
 public class StringQueue implements IQueue {
 
+
+  /**
+   * list of String elements
+   */
   private List<String> elements = new ArrayList<String>();
+
+  /**
+   * Integer value that describes the maximum size of the queue
+   */
   private int maxSize = 5;
 
 
-
-  public StringQueue(int maxsize) {
+  /**
+   * Constructor for StringQueue class
+   */
+  public StringQueue(int maxsize, List<String> elements) {
     this.maxSize = maxSize;
+    this.elements = elements;
   }
 
 
-  //Second Mistake : < instead of =
+
   @Override
   public boolean offer(String obj) {
     if (elements.size() < maxSize)
@@ -31,7 +49,7 @@ public class StringQueue implements IQueue {
     return true;
   }
 
-  //Third mistake : Does not return null
+
   @Override
   public String poll() {
     String element = peek();
