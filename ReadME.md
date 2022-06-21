@@ -15,4 +15,4 @@
 
 - [X] create tests  
 
-- [ ] create maven site documentation
+- [X] create maven site documentation
