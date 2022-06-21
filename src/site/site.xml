@@ -1,0 +1,15 @@
+<project name="Task7UnterwieserHofer">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+    <menu name="Overview">
+    <item name="UnterwieserWorkload" href="markdown\Unterwieser.md"/>
+    <item name="HoferWorkload" href="test.html"/>
+    <item name="Drinks" href="drinks.html"/>
+    <item name ="ReadME" href ="../../ReadME.md"/>
+    </menu>
+    <menu ref="reports"/>
+    <menu ref="parent"/>
+    <menu ref="modules"/>
+    </body>
+    </project>
