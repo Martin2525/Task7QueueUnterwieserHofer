@@ -7,40 +7,59 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DrinkTest {
 
+    Liquid testLiquid;
+    SimpleDrink testDrink;
+
     @BeforeEach
     void setUp (){
-        Liquid testLiquid = new Liquid("testname",1.1,1.2);
-        SimpleDrink testDrink = new SimpleDrink("testname2",testLiquid);
+        this.testLiquid = new Liquid("testname",1.1,1.2);
+        this.testDrink = new SimpleDrink("testname2",testLiquid);
 
     }
 
+    /**
+     * tests if it is possible to get the volume of a SimpleDrink object
+     */
     @Test
     void getVolume() {
-        Liquid testLiquid = new Liquid("testname",1.1,1.2);
-        assertEquals(1.1,testLiquid.getVolume());
+        assertEquals(1.1,testDrink.getVolume());
     }
-
+    /**
+     * tests if it is possible to get the alcohol percent of a SimpleDrink object
+     */
     @Test
     void getAlcoholPercent() {
-        Liquid testLiquid = new Liquid("testname",1.1,1.2);
-        assertEquals(1.2,testLiquid.getAlcoholPercent());
+        assertEquals(1.2,testDrink.getAlcoholPercent());
     }
-
+    /**
+     * tests if a SimpleDrink object has an alcohol percent above 0
+     */
     @Test
     void isAlcoholic() {
 
     }
-
+    /**
+     * tests if it is possible to get the name of a SimpleDrink object
+     */
     @Test
     void getName() {
-        Liquid testLiquid = new Liquid("testname",1.1,1.2);
-        assertEquals("testname",testLiquid.getName());
+        assertEquals("testname2",testDrink.getName());
     }
-
+    /**
+     * tests if it is possible to set the name of a SimpleDrink object
+     */
     @Test
     void setName() {
-        Liquid testLiquid = new Liquid("testname",1.1,1.2);
-        testLiquid.setName("test2");
-        assertTrue(testLiquid.getName() == "test2");
+        testDrink.setName("test2");
+        assertEquals("test2", testDrink.getName());
+    }
+
+    /**
+     * tests if it is possible to instantiate a SimpleDrink object
+     */
+    @Test
+    void DrinkTest(){
+        SimpleDrink simpleDrink = new SimpleDrink("testDrink",testLiquid);
+        assertNotNull(simpleDrink);
     }
 }

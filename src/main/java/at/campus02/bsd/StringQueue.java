@@ -7,7 +7,6 @@
 
 package at.campus02.bsd;
 
-import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +69,6 @@ public class StringQueue implements IQueue {
   @Override
   public String remove() {
     String element = poll();
-    element = "";
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
 
