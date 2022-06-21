@@ -4,8 +4,7 @@
     <body>
     <menu name="Overview">
     <item name="UnterwieserWorkload" href="markdown\Unterwieser.md"/>
-    <item name="HoferWorkload" href="test.html"/>
-    <item name="Drinks" href="drinks.html"/>
+    <item name="HoferWorkload" href="markdown\Hofer.md"/>
     <item name ="ReadME" href ="../../ReadME.md"/>
     </menu>
     <menu ref="reports"/>
