@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"at.campus02.bsd","l":"Drink"},{"p":"at.campus02.bsd","l":"IDrinks"},{"p":"at.campus02.bsd","l":"IDrinksQueue"},{"p":"at.campus02.bsd","l":"IQueue"},{"p":"at.campus02.bsd","l":"Liquid"},{"p":"at.campus02.bsd","l":"SimpleDrink"},{"p":"at.campus02.bsd","l":"StringQueue"}]

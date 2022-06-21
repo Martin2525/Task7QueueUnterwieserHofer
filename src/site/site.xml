@@ -3,10 +3,11 @@
     <version position="left"/>
     <body>
     <menu name="Overview">
-    <item name="UnterwieserWorkload" href="markdown\Unterwieser.md"/>
-    <item name="HoferWorkload" href="markdown\Hofer.md"/>
+    <item name="UnterwieserWorkload" href="../../src/site/markdown/Unterwieser.md"/>
+    <item name="HoferWorkload" href="../../src/site/markdown/Hofer.md"/>
     <item name ="ReadME" href ="../../ReadME.md"/>
     <item name="JacocoReport" href="../../target/site/jacoco/index.html"/>
+    <item name ="Java-API-Documentation" href ="../../target/site/apidocs/index-all.html"/>
     </menu>
     <menu ref="reports"/>
     <menu ref="parent"/>
