@@ -6,6 +6,7 @@
     <item name="UnterwieserWorkload" href="markdown\Unterwieser.md"/>
     <item name="HoferWorkload" href="markdown\Hofer.md"/>
     <item name ="ReadME" href ="../../ReadME.md"/>
+    <item name="JacocoReport" href="../../target/site/jacoco/index.html"/>
     </menu>
     <menu ref="reports"/>
     <menu ref="parent"/>
